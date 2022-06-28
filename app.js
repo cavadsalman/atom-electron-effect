@@ -17,13 +17,6 @@ function move() {
     electron.style.top = `${y}px`
     deg = (360 + deg + direction) % 360
 }
-function moveDemo() {
-    x = Math.cos(deg * Math.PI / 180) * radius + centerX
-    y = Math.sin(deg * Math.PI / 180) * radius + centerY
-    electron.style.left = `${x}px`
-    electron.style.top = `${y}px`
-    deg = (360 + deg + direction) % 360
-}
 
 setInterval(() => {
     move()
